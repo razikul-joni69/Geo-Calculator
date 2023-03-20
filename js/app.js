@@ -1,5 +1,5 @@
 //CalculateTotal
-function calculateTotal(isTrue, firstId, secondId) {
+function calculateTotal(calculateFor, firstId, secondId) {
     let firstInput = document.getElementById(firstId);
     let secondInput = document.getElementById(secondId);
 
@@ -8,14 +8,26 @@ function calculateTotal(isTrue, firstId, secondId) {
 
     let calculateTotal;
 
-    if (isTrue) {
+    if (
+        calculateFor === "Triangle" ||
+        calculateFor === "Rhombus" ||
+        calculateFor === "Pentagon"
+    ) {
         calculateTotal = 0.5 * firstNumber * secondNumber;
-    } else {
+    } else if (
+        calculateFor === "Rectangle" ||
+        calculateFor === "Parallelogram"
+    ) {
         calculateTotal = firstNumber * secondNumber;
+    } else {
+        calculateEllipse = 3.14 * firstNumber * secondNumber;
+        calculateTotal = calculateEllipse.toFixed(2);
     }
 
     if (firstInput.value == "" || secondInput.value == "") {
         console.log("Input can't be blank. Please Enter Two Numbers.");
+    } else if (firstNumber < 1 || secondNumber < 1) {
+        console.log("Value Can't be Negative or Zero.");
     } else {
         let calculationArea = document.getElementById("calculation-area");
 
@@ -23,24 +35,31 @@ function calculateTotal(isTrue, firstId, secondId) {
         newCalculation.innerHTML = `
         <p class="d-flex justify-content-between">
 
-                ${calculateTotal} <button type="button" class="btn btn-primary">Primary</button>
+               ${calculateFor} - ${calculateTotal} <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
 
         </p>
     `;
         calculationArea.appendChild(newCalculation);
     }
 }
+
+// Triangle Calculate
 document
     .getElementById("triangle__calculate")
     .addEventListener("click", function () {
-        calculateTotal(true, "triangle__first-input", "triangle__second-input");
+        calculateTotal(
+            "Triangle",
+            "triangle__first-input",
+            "triangle__second-input"
+        );
     });
 
+// Rectangle Calculate
 document
     .getElementById("rectangle__calculate")
     .addEventListener("click", function () {
         calculateTotal(
-            false,
+            "Rectangle",
             "rectangle__first-input",
             "rectangle__second-input"
         );
@@ -51,7 +70,7 @@ document
     .getElementById("parallelogram__calculate")
     .addEventListener("click", function () {
         calculateTotal(
-            false,
+            "Parallelogram",
             "parallelogram__first-input",
             "parallelogram__second-input"
         );
@@ -61,12 +80,31 @@ document
 document
     .getElementById("rhombus__calculate")
     .addEventListener("click", function () {
-        calculateTotal(true, "rhombus__first-input", "rhombus__second-input");
+        calculateTotal(
+            "Rhombus",
+            "rhombus__first-input",
+            "rhombus__second-input"
+        );
     });
 
 // Pentagon Calculate
 document
     .getElementById("pentagon__calculate")
     .addEventListener("click", function () {
-        calculateTotal(true, "pentagon__first-input", "pentagon__second-input");
+        calculateTotal(
+            "Pentagon",
+            "pentagon__first-input",
+            "pentagon__second-input"
+        );
+    });
+
+// Ellipse Calculate
+document
+    .getElementById("ellipse__calculate")
+    .addEventListener("click", function () {
+        calculateTotal(
+            "Ellipse",
+            "ellipse__first-input",
+            "ellipse__second-input"
+        );
     });
