@@ -63,3 +63,10 @@ document
     .addEventListener("click", function () {
         calculateTotal(true, "rhombus__first-input", "rhombus__second-input");
     });
+
+// Pentagon Calculate
+document
+    .getElementById("pentagon__calculate")
+    .addEventListener("click", function () {
+        calculateTotal(true, "pentagon__first-input", "pentagon__second-input");
+    });
