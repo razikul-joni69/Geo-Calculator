@@ -17,7 +17,259 @@
         <title>Geo Calculation</title>
     </head>
     <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-info">
+                <div class="container">
+                    <a class="navbar-brand" href="#"
+                        ><strong>Interactive</strong> <br />
+                        <small>Geometry Genius</small></a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                   
+                    <button type="button" class="btn btn-primary">
+                        <strong>Blog</strong>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <section class="container">
+            <div id="content">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center" style="width: 18rem">
+                            <img
+                                src="./assets/images/triangle.png"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Triangle</h5>
+                                <p class="card-text">Area (A) = 0.5 X b X h</p>
+                                <div class="">
+                                    <input
+                                        type="text"
+                                        id="triangle__first-input"
+                                        class="w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                    />
+                                    <span>cm</span>
+                                    <input
+                                        type="text"
+                                        id="triangle__second-input"
+                                        class="w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                    /><span>cm</span>
+                                </div>
+                                <a
+                                    id="triangle__calculate"
+                                    href="#"
+                                    class="btn btn-primary mt-3 d-block calculate"
+                                    >Calculate</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center" style="width: 18rem">
+                            <img
+                                src="./assets/images/triangle.png"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Rectangle</h5>
+                                <p class="card-text">Area (A) = W X I</p>
+                                <div class="">
+                                    <input
+                                        type="number"
+                                        id="rectangle__first-input"
+                                        placeholder="W"
+                                        class="first-input w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                    />
+                                    <span>cm</span>
+                                    <input
+                                        type="number"
+                                        id="rectangle__second-input"
+                                        placeholder="I"
+                                        class="second-input w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                    /><span>cm</span>
+                                </div>
+                                <a
+                                    id="rectangle__calculate"
+                                    href="#"
+                                    class="btn btn-primary mt-3 d-block calculate"
+                                    >Calculate</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center" style="width: 18rem">
+                            <img
+                                src="./assets/images/triangle.png"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Parallelogram</h5>
+                                <p class="card-text">Area (A) = b X h</p>
+                                <div class="">
+                                    <input
+                                        type="number"
+                                        id="parallelogram__first-input"
+                                        class="w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                        placeholder="b"
+                                    />
+                                    <span>cm</span>
+                                    <input
+                                        type="number"
+                                        id="parallelogram__second-input"
+                                        class="w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                        placeholder="h"
+                                    /><span>cm</span>
+                                </div>
+                                <a
+                                    id="parallelogram__calculate"
+                                    href="#"
+                                    class="btn btn-primary mt-3 d-block"
+                                    >Calculate</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center" style="width: 18rem">
+                            <img
+                                src="./assets/images/triangle.png"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Rhombus</h5>
+                                <p class="card-text">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub> </p>
+                                <div class="">
+                                    <input
+                                        type="number"
+                                        id="rhombus__first-input"
+                                        class="w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                        placeholder="d1"
+                                    />
+                                    <span>cm</span>
+                                    <input
+                                        type="number"
+                                        id="rhombus__second-input"
+                                        class="w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                        placeholder="d2"
+                                    /><span>cm</span>
+                                </div>
+                                <a
+                                    id="rhombus__calculate"
+                                    href="#"
+                                    class="btn btn-primary mt-3 d-block"
+                                    >Calculate</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center" style="width: 18rem">
+                            <img
+                                src="./assets/images/triangle.png"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Triangle</h5>
+                                <p class="card-text">Area (A) = 0.5 X b X h</p>
+                                <div class="">
+                                    <input
+                                        type="number"
+                                        id="first-input"
+                                        class="w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                    />
+                                    <span>cm</span>
+                                    <input
+                                        type="number"
+                                        id="second-input"
+                                        class="w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                    /><span>cm</span>
+                                </div>
+                                <a
+                                    id="calculate"
+                                    href="#"
+                                    class="btn btn-primary mt-3 d-block"
+                                    >calculate</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 text-center" style="width: 18rem">
+                            <img
+                                src="./assets/images/triangle.png"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Triangle</h5>
+                                <p class="card-text">Area (A) = 0.5 X b X h</p>
+                                <div class="">
+                                    <input
+                                        type="number"
+                                        id="first-input"
+                                        class="w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                    />
+                                    <span>cm</span>
+                                    <input
+                                        type="number"
+                                        id="second-input"
+                                        class="w-25 form-control d-inline"
+                                        aria-describedby="numberHelpInline"
+                                    /><span>cm</span>
+                                </div>
+                                <a
+                                    id="calculate"
+                                    href="#"
+                                    class="btn btn-primary mt-3 d-block"
+                                    >calculate</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="">
+                    <h2 class="text-center p-3"><u>Area Calculation</u></h2>
+                    <div id="calculation-area" class="p-3 fw-bold">
+
+                    <div/>
+                </div>
+            </div>
+        </section>
+
         <!-- Javascript Link -->
+        <script src="./js/app.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
