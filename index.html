@@ -24,18 +24,6 @@
                         ><strong>Interactive</strong> <br />
                         <small>Geometry Genius</small></a
                     >
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                   
                     <a href="blog.html" type="button" class="btn btn-primary">
                         <strong>Blog</strong>
                     </a>
@@ -43,11 +31,11 @@
             </nav>
         </header>
 
-        <section id="main__section" class="container">
+        <section id="main__section" class="container-xl">
             <div id="content">
                 <div id="card__container" class="row g-3 mt-3">
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div  id="card__01"  class="card p-3 text-center"  >
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div id="card__01" class="card p-3 text-center">
                             <img
                                 src="./assets/images/triangle.png"
                                 class="card-img-top"
@@ -56,23 +44,29 @@
                             <div class="card-body">
                                 <h5 class="card-title">Triangle</h5>
                                 <p class="card-text">Area (A) = 0.5 X b X h</p>
-                                <div class="">
+                                <div class="card__input">
                                     <input
-                                        type="text"
+                                        type="number"
                                         id="triangle__first-input"
                                         class="w-25 form-control d-inline"
                                         aria-describedby="numberHelpInline"
                                     />
                                     <span>cm</span>
                                     <input
-                                        type="text"
+                                        type="number"
                                         id="triangle__second-input"
                                         class="w-25 form-control d-inline"
                                         aria-describedby="numberHelpInline"
                                     /><span>cm</span>
                                 </div>
-                                <p class="empty__value text-danger" >Input can't be blank. Please Enter Two Numbers.</p>
-                                <p class="negative__value text-danger" >Input can't be Negative or Zero. Please Enter Positive Integer.</p>
+                                <p class="empty__value text-danger">
+                                    Input can't be blank. Please Enter Two
+                                    Numbers.
+                                </p>
+                                <p class="negative__value text-danger">
+                                    Input can't be Negative or Zero. Please
+                                    Enter Positive Integer.
+                                </p>
                                 <a
                                     id="triangle__calculate"
                                     href="#"
@@ -83,8 +77,8 @@
                         </div>
                     </div>
 
-                    <div class=" col-sm-12 col-md-6 col-lg-4">
-                        <div id="card__02"  class="card p-3 text-center"  >
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div id="card__02" class="card p-3 text-center">
                             <img
                                 src="./assets/images/rectangle.png"
                                 class="card-img-top"
@@ -110,8 +104,14 @@
                                         aria-describedby="numberHelpInline"
                                     /><span>cm</span>
                                 </div>
-                                 <p class="empty__value text-danger" >Input can't be blank. Please Enter Two Numbers.</p>
-                                <p class="negative__value text-danger" >Input can't be Negative or Zero. Please Enter Positive Integer.</p>
+                                <p class="empty__value text-danger">
+                                    Input can't be blank. Please Enter Two
+                                    Numbers.
+                                </p>
+                                <p class="negative__value text-danger">
+                                    Input can't be Negative or Zero. Please
+                                    Enter Positive Integer.
+                                </p>
                                 <a
                                     id="rectangle__calculate"
                                     href="#"
@@ -121,8 +121,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div id="card__03"  class="card p-3 text-center"  >
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div id="card__03" class="card p-3 text-center">
                             <img
                                 src="./assets/images/parallelogram.png"
                                 class="card-img-top"
@@ -148,8 +148,14 @@
                                         placeholder="h"
                                     /><span>cm</span>
                                 </div>
-                                 <p class="empty__value text-danger" >Input can't be blank. Please Enter Two Numbers.</p>
-                                <p class="negative__value text-danger" >Input can't be Negative or Zero. Please Enter Positive Integer.</p>
+                                <p class="empty__value text-danger">
+                                    Input can't be blank. Please Enter Two
+                                    Numbers.
+                                </p>
+                                <p class="negative__value text-danger">
+                                    Input can't be Negative or Zero. Please
+                                    Enter Positive Integer.
+                                </p>
                                 <a
                                     id="parallelogram__calculate"
                                     href="#"
@@ -159,8 +165,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-sm-12 col-md-6 col-lg-4">
-                        <div id="card__04"  class="card p-3 text-center"  >
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div id="card__04" class="card p-3 text-center">
                             <img
                                 src="./assets/images/rhombus.png"
                                 class="card-img-top"
@@ -168,7 +174,11 @@
                             />
                             <div class="card-body">
                                 <h5 class="card-title">Rhombus</h5>
-                                <p class="card-text">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub> </p>
+                                <p class="card-text">
+                                    Area (A) = 0.5 X d<sub>1</sub> X d<sub
+                                        >2</sub
+                                    >
+                                </p>
                                 <div class="">
                                     <input
                                         type="number"
@@ -186,8 +196,14 @@
                                         placeholder="d2"
                                     /><span>cm</span>
                                 </div>
-                                 <p class="empty__value text-danger" >Input can't be blank. Please Enter Two Numbers.</p>
-                                <p class="negative__value text-danger" >Input can't be Negative or Zero. Please Enter Positive Integer.</p>
+                                <p class="empty__value text-danger">
+                                    Input can't be blank. Please Enter Two
+                                    Numbers.
+                                </p>
+                                <p class="negative__value text-danger">
+                                    Input can't be Negative or Zero. Please
+                                    Enter Positive Integer.
+                                </p>
                                 <a
                                     id="rhombus__calculate"
                                     href="#"
@@ -197,8 +213,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-sm-12 col-md-6 col-lg-4">
-                        <div id="card__05"  class="card p-3 text-center"  >
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div id="card__05" class="card p-3 text-center">
                             <img
                                 src="./assets/images/pentagon.png"
                                 class="card-img-top"
@@ -224,8 +240,14 @@
                                         placeholder="b"
                                     /><span>cm</span>
                                 </div>
-                                 <p class="empty__value text-danger" >Input can't be blank. Please Enter Two Numbers.</p>
-                                <p class="negative__value text-danger" >Input can't be Negative or Zero. Please Enter Positive Integer.</p>
+                                <p class="empty__value text-danger">
+                                    Input can't be blank. Please Enter Two
+                                    Numbers.
+                                </p>
+                                <p class="negative__value text-danger">
+                                    Input can't be Negative or Zero. Please
+                                    Enter Positive Integer.
+                                </p>
                                 <a
                                     id="pentagon__calculate"
                                     href="#"
@@ -235,8 +257,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-sm-12 col-md-6 col-lg-4">
-                        <div id="card__06"  class="card p-3 text-center"  >
+                    <div class="col-sm-12 col-md-6 col-xl-4">
+                        <div id="card__06" class="card p-3 text-center">
                             <img
                                 src="./assets/images/ellipse.png"
                                 class="card-img-top"
@@ -262,8 +284,14 @@
                                         placeholder="b"
                                     /><span>cm</span>
                                 </div>
-                                 <p class="empty__value text-danger" >Input can't be blank. Please Enter Two Numbers.</p>
-                                <p class="negative__value text-danger" >Input can't be Negative or Zero. Please Enter Positive Integer.</p>
+                                <p class="empty__value text-danger">
+                                    Input can't be blank. Please Enter Two
+                                    Numbers.
+                                </p>
+                                <p class="negative__value text-danger">
+                                    Input can't be Negative or Zero. Please
+                                    Enter Positive Integer.
+                                </p>
                                 <a
                                     id="ellipse__calculate"
                                     href="#"
@@ -278,9 +306,7 @@
             <div id="sidebar">
                 <div class="">
                     <h2 class="text-center p-3"><u>Calculation Area</u></h2>
-                    <div id="calculation-area" class="p-3 fw-bold">
-
-                    <div/>
+                    <div id="calculation-area" class="p-3 fw-bold"></div>
                 </div>
             </div>
         </section>

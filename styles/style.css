@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,11 +13,15 @@
     width: 30%;
     float: right;
     height: 100%;
-    background-color: #f0ebeb;
+    background-color: #f1f0f0;
+    box-shadow: 10px 9px 19px -3px rgba(0, 0, 0, 0.78);
+    -webkit-box-shadow: 10px 9px 19px -3px rgba(0, 0, 0, 0.78);
+    -moz-box-shadow: 10px 9px 19px -3px rgba(0, 0, 0, 0.78);
 }
 
 /* hide Error message  */
-.empty__value, .negative__value {
+.empty__value,
+.negative__value {
     display: none;
 }
 
@@ -26,19 +30,40 @@
     height: 200px;
 }
 
+/* Media query for responsive */
 @media only screen and (max-width: 576px) {
     #main__section {
         display: flex;
         flex-direction: column-reverse;
     }
-#content {
-    width: 100%;
-    display: block;
+    #content {
+        width: 100%;
+        display: block;
+    }
+    #sidebar {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #c0bcbc;
+    }
 }
-#sidebar {
-    display: block;
-    width: 100%;
-    height: 80vh;
-    background-color: #c0bcbc;
+@media screen and (min-width: 577px) and (max-width: 1140px) {
+    #content {
+        width: 60%;
+    }
+    #sidebar {
+        top: 0;
+        width: 40%;
+        background-color: #c0bcbc;
+    }
 }
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    #content {
+        width: 40%;
+    }
+    #sidebar {
+        top: 0;
+        width: 60%;
+        background-color: #c0bcbc;
+    }
 }
