@@ -1,5 +1,5 @@
 //CalculateTotal
-function calculateTotal(calculateFor, firstId, secondId) {
+function calculateTotal(calculateFor, firstId, secondId, errorIndex) {
     let firstInput = document.getElementById(firstId);
     let secondInput = document.getElementById(secondId);
 
@@ -24,18 +24,25 @@ function calculateTotal(calculateFor, firstId, secondId) {
         calculateTotal = calculateEllipse.toFixed(2);
     }
 
+    let test = document.getElementsByClassName("empty__value")[errorIndex]
+    console.log(test)
+    // Hide the previous errors
+    document.getElementsByClassName("empty__value")[errorIndex].style.display = "none";
+    document.getElementsByClassName("negative__value")[errorIndex].style.display = "none";
     if (firstInput.value == "" || secondInput.value == "") {
-        console.log("Input can't be blank. Please Enter Two Numbers.");
+        document.getElementsByClassName("empty__value")[errorIndex].style.display = "block";
     } else if (firstNumber < 1 || secondNumber < 1) {
-        console.log("Value Can't be Negative or Zero.");
+        document.getElementsByClassName("negative__value")[errorIndex].style.display =
+            "block";
     } else {
         let calculationArea = document.getElementById("calculation-area");
 
         let newCalculation = document.createElement("div");
         newCalculation.innerHTML = `
-        <p class="d-flex justify-content-between">
+        <p class="d-flex justify-content-between fs-5">
 
-               ${calculateFor} - ${calculateTotal} <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
+               ${calculateFor} - <span>${calculateTotal}cm<sup>2</sup> </span>
+               <button type="button" class="btn btn-primary">Convert to m<sup>2</sup></button>
 
         </p>
     `;
@@ -50,7 +57,8 @@ document
         calculateTotal(
             "Triangle",
             "triangle__first-input",
-            "triangle__second-input"
+            "triangle__second-input",
+            0
         );
     });
 
@@ -61,7 +69,8 @@ document
         calculateTotal(
             "Rectangle",
             "rectangle__first-input",
-            "rectangle__second-input"
+            "rectangle__second-input",
+            1
         );
     });
 
@@ -72,7 +81,8 @@ document
         calculateTotal(
             "Parallelogram",
             "parallelogram__first-input",
-            "parallelogram__second-input"
+            "parallelogram__second-input",
+            2
         );
     });
 
@@ -83,7 +93,8 @@ document
         calculateTotal(
             "Rhombus",
             "rhombus__first-input",
-            "rhombus__second-input"
+            "rhombus__second-input",
+            3
         );
     });
 
@@ -94,7 +105,8 @@ document
         calculateTotal(
             "Pentagon",
             "pentagon__first-input",
-            "pentagon__second-input"
+            "pentagon__second-input",
+            4
         );
     });
 
@@ -105,6 +117,7 @@ document
         calculateTotal(
             "Ellipse",
             "ellipse__first-input",
-            "ellipse__second-input"
+            "ellipse__second-input",
+            5
         );
     });
