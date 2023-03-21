@@ -20,3 +20,20 @@
 .empty__value, .negative__value {
     display: none;
 }
+
+@media only screen and (max-width: 576px) {
+    #main__section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+#content {
+    width: 100%;
+    display: block;
+}
+#sidebar {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    background-color: #c0bcbc;
+}
+}
