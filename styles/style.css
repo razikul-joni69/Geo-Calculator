@@ -12,13 +12,18 @@
     display: inline-block;
     width: 30%;
     float: right;
-    height: 100vh;
-    background-color: #c0bcbc;
+    height: 100%;
+    background-color: #f0ebeb;
 }
 
 /* hide Error message  */
 .empty__value, .negative__value {
     display: none;
+}
+
+/* card image size fixed */
+.card img {
+    height: 200px;
 }
 
 @media only screen and (max-width: 576px) {
