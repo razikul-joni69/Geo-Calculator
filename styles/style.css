@@ -30,6 +30,10 @@
     height: 200px;
 }
 
+/* input size */
+.card__input input {
+    width: 35%;
+}
 /* Media query for responsive */
 @media only screen and (max-width: 576px) {
     #main__section {
